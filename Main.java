@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Main {
@@ -32,7 +31,6 @@ public class Main {
                     break;
             }
         }
-
         input.close();
     }
 
@@ -40,7 +38,6 @@ public class Main {
         System.out.println("\n===== PATIENT REGISTRATION =====");
         System.out.print("Full name: ");
         String name = input.nextLine().trim();
-
         while (name.isEmpty()) {
             System.out.print("Name cannot be empty. Enter full name: ");
             name = input.nextLine().trim();
@@ -70,7 +67,6 @@ public class Main {
 
     private static void adminPanel() {
         boolean loggedIn = true;
-
         while (loggedIn) {
             System.out.println("\n===== ADMIN MENU =====");
             System.out.println("1. View Appointment Schedules");
@@ -92,14 +88,11 @@ public class Main {
     private static int readInt(String message, int min, int max) {
         while (true) {
             System.out.print(message);
-
             try {
                 int number = Integer.parseInt(input.nextLine().trim());
-
                 if (number >= min && number <= max) {
                     return number;
                 }
-
                 System.out.println("Enter a number from " + min + " to " + max + ".");
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a number.");
@@ -111,11 +104,9 @@ public class Main {
         while (true) {
             System.out.print(message);
             String number = input.nextLine().trim();
-
             if (number.matches("[0-9]+")) {
                 return number;
             }
-
             System.out.println("Contact number must contain digits only.");
         }
     }
