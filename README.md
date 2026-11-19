@@ -77,4 +77,49 @@ private final SecureRandom random = new SecureRandom();
 
 Lastly, in Clinic.java, encapsulation is applied to the appointment schedules, used appointment codes, and random code generator. These private fields prevent other classes from directly modifying the clinic's internal scheduling data.
 
+### *Inheritance*
 
+```java
+public abstract class User {
+    private String name;
+
+    public User(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public abstract void displayMenu();
+}
+```
+
+The User.java serves as the parent class that contains common properties and methods shared by different types of users in the system. It provides the basic structure that other classes can inherit.
+
+```java
+public class Patient extends User {
+
+    public Patient(String name, int age, String contactNumber, String sex) {
+        super(name);
+        this.age = age;
+        this.contactNumber = contactNumber;
+        this.sex = sex;
+    }
+}
+```
+
+In Patient.java, inheritance is applied by extending the User class. Through `extends User`, the Patient class inherits the name property and getName() method from its parent class. The `super(name)` constructor is used to pass the patient's name to the parent class.
+
+```java
+public class Admin extends User {
+
+    public Admin(String name) {
+        super(name);
+    }
+}
+```
+
+Similarly, in Admin.java, inheritance is applied by extending the same User parent class. This allows the Admin class to inherit common user information and methods without having to create them again.
+
+Both Patient.java and Admin.java use the User class as their foundation, allowing the system to organize different user types while reusing common code.
