@@ -202,3 +202,91 @@ public void displayMenu() {
 Similarly, in Admin.java, the same displayMenu() method is overridden to display a message specific to administrators.
 
 Through polymorphism, both Patient.java and Admin.java use the same inherited method name but execute different implementations depending on the object. This allows the system to provide different behaviors for different types of users while maintaining a common method structure.
+
+### ***Program Structure***
+Main Class(Guest Booking)
+
+    HEALTH CONSULTATION SCHEDULING SYSTEM
+    - 1.Guest
+    - 2.Admin
+    - 3.Exit
+    - Choose an option: 1
+Patient Class
+
+    Patient Registration:
+    - Full Name: Juan Dela Cruz
+    - Age: 28
+    - Contact Number: 09171234567
+
+    Select Sex:
+    - 1.Male
+    - 2.Female
+    - Choose: 1
+Appointment Class
+
+    Available Appointment Dates:
+     - 1. Friday, November 20, 2026 | Available - 0/30
+     - 2. Saturday, November 21, 2026 | Available - 0/30
+     - 3. Sunday, November 22, 2026 | Available - 0/30
+     - 4. Monday, November 23, 2026 | Available - 0/30
+     - 5. Tuesday, November 24, 2026 | Available - 0/30
+     - 6. Wednesday, November 25, 2026 | Available - 0/30
+     - 7. Thursday, November 26, 2026 | Available - 0/30
+     - 8. Friday, November 27, 2026 | Available - 0/30
+     - 9. Saturday, November 28, 2026 | Available - 0/30
+     - 10. Sunday, November 29, 2026 | Available - 0/30
+     - 11. Monday, November 30, 2026 | Available - 0/30
+     - 12. Tuesday, December 01, 2026 | Available - 0/30
+
+     Select a date: 1
+Clinic Class
+
+    Appointment Confirmation
+     - Patient Name: Juan Dela Cruz
+     - Age: 28
+     - Contact Number: 09171234567
+     - Sex: Male
+     - Appointment Date: November 20, 2026
+     - Appointment Time: 6:00 AM - 6:28 AM
+     - Recommended Arrival: 6:00 AM
+     - Appointment Code: HC-8K2P-9X4M
+     - Status: SCHEDULED
+
+     Please save your appointment code.
+
+Main Class(Admin)
+
+    HEALTH CONSULTATION SCHEDULING SYSTEM
+    - 1.Guest
+    - 2.Admin
+    - 3.Exit
+    - Choose an option: 2
+
+    - Admin username: admin
+    - Admin password: passpass
+    - Login successful.
+
+    Welcome Admin
+Admin Class
+
+    Admin Menu
+    - 1. View Appointment Schedules
+    - 2. Logout
+    - Choose an option: 1
+Appointment Class
+
+    - Date: November 20, 2026
+    - No appointments.
+
+    - Date: November 21, 2026
+    - No appointments.
+Admin Menu
+
+    - 1. View Appointment Schedules
+    - 2. Logout
+    - Choose an option: 2
+    - Admin logged out.
+    
+
+
+    
