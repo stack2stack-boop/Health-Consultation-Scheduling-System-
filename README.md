@@ -327,7 +327,7 @@ Once logged in, the Admin Menu appears:
 2. Logout
  - View Appointment Schedules lists every date, with each patient’s name, time slot, and status (SCHEDULED or COMPLETED). Dates with no bookings show “No appointments.”
 Logout returns you to the main menu.
-4. Exit
+3. Exit
 
 Choose 3. Exit from the main menu to close the program.
 
