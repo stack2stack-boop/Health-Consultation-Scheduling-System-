@@ -1,4 +1,3 @@
-
 import java.security.SecureRandom;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -7,12 +6,11 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Clinic {
+class Clinic {
     private static final int CAPACITY = 30;
     private static final int TOTAL_DATES = 12;
     private static final int SLOT_DURATION = 28;
     private static final LocalTime OPENING_TIME = LocalTime.of(6, 0);
-
     private final LinkedHashMap<LocalDate, Appointment[]> schedules = new LinkedHashMap<>();
     private final ArrayList<String> usedCodes = new ArrayList<>();
     private final SecureRandom random = new SecureRandom();
@@ -70,13 +68,11 @@ public class Clinic {
 
     private int countAppointments(Appointment[] appointments) {
         int count = 0;
-
         for (Appointment appointment : appointments) {
             if (appointment != null) {
                 count++;
             }
         }
-
         return count;
     }
 
@@ -86,17 +82,13 @@ public class Clinic {
 
         do {
             StringBuilder builder = new StringBuilder("HC-");
-
             for (int i = 0; i < 4; i++) {
                 builder.append(characters.charAt(random.nextInt(characters.length())));
             }
-
             builder.append("-");
-
             for (int i = 0; i < 4; i++) {
                 builder.append(characters.charAt(random.nextInt(characters.length())));
             }
-
             code = builder.toString();
         } while (usedCodes.contains(code));
 
