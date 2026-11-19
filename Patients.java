@@ -1,5 +1,4 @@
-
-public class Patient extends User {
+class Patient extends User {
     private int age;
     private String contactNumber;
     private String sex;
