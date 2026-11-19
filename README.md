@@ -274,6 +274,17 @@ Admin Menu
     - Choose an option: 2
     - Admin logged out.
     
+# How to Run it
+
+1. Download the Source Code: On the main repository page, click the green <> Code button and select Download ZIP.
+
+2. Extract the Files: Locate the downloaded ZIP file on your computer and extract it into a regular folder.
+
+3. Open in VS Code: Launch Visual Studio Code, go to File > Open Folder... in the top-left menu, and select the extracted Health-Consultation-          Scheduling-System--main folder.
+
+4. Run the Application: Open Main.java, click Run in the top menu, and select Start Debugging (or press F5). Once the debugger finishes loading, the    system will launch and run as intended.
+
+
 
 
     
