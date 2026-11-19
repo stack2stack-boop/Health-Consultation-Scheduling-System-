@@ -285,6 +285,53 @@ Admin Menu
 4. Run the Application: Open Main.java, click Run in the top menu, and select Start Debugging (or press F5). Once the debugger finishes loading, the    system will launch and run as intended.
 
 
+# How to Navigate the Program
+1. Main Menu
+
+When the program starts, you’ll see:
+
+1. Guest
+2. Admin
+3. Exit
+
+Type the number of your choice and press Enter. Invalid input (letters or numbers out of range) will ask you to try again.
+
+2.1 Guest: Booking an Appointment
+
+Choose 1. Guest and fill in the registration form:
+
+Full name: cannot be left empty.
+Age: a number from 1 to 100.
+Contact number: digits only (no spaces, dashes, or +).
+Sex: enter 1 for Male or 2 for Female.
+
+Next, you’ll see the next 12 available dates, starting from the day after tomorrow. Each date shows how many of its 30 slots are taken (for example, 5/30) and whether it’s Available or FULL.
+
+Enter the number of the date you want (1 to 12).
+The system automatically assigns the next free time slot for that day. Slots are 28 minutes long, starting at 6:00 AM.
+A confirmation screen shows your details, appointment date and time, recommended arrival time (10 minutes early, except for the 6:00 AM slot), your appointment code (format HC-XXXX-XXXX), and your status.
+
+Save your appointment code. 
+
+2.2 Admin: Viewing Schedules
+
+Choose 2. Admin and log in:
+
+Username: admin
+Password: passpass
+You get 3 attempts. After the third failed attempt, you return to the main menu.
+
+Once logged in, the Admin Menu appears:
+
+1. View Appointment Schedules
+2. Logout
+ - View Appointment Schedules lists every date, with each patient’s name, time slot, and status (SCHEDULED or COMPLETED). Dates with no bookings show “No appointments.”
+Logout returns you to the main menu.
+4. Exit
+
+Choose 3. Exit from the main menu to close the program.
+
+
 
 
     
