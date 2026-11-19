@@ -2,7 +2,7 @@
 
 Description: "A Java-based Health Consultation Scheduling System that allows patients to register and schedule health consultations online. It provides appointment date selection, automated time assignments, unique appointment codes, and an admin interface for viewing and managing appointment schedules. Developed using Object-Oriented Programming (OOP) concepts."
 
-## Object-Oriented Programming Concepts Applied
+# Object-Oriented Programming Concepts Applied
 
 The following are the detailed documentation of how the OOP principles were used throughout the program:
 
