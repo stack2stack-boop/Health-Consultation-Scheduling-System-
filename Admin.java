@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class Admin extends User {
+class Admin extends User {
     private final String username = "admin";
     private final String password = "passpass";
 
