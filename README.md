@@ -162,3 +162,43 @@ public void displayMenu() {
 Similarly, in Admin.java, the same abstract method is implemented to display the administrator's welcome message.
 
 Through abstraction, the system uses the User class as a general foundation while allowing Patient.java and Admin.java to provide their own specific implementations.
+
+### *Polymorphism*
+
+```java
+public abstract class User {
+    private String name;
+
+    public User(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public abstract void displayMenu();
+}
+```
+
+In User.java, polymorphism is supported through the displayMenu() method, which is declared as an abstract method. This allows different child classes to provide their own versions of the same method.
+
+```java
+@Override
+public void displayMenu() {
+    System.out.println("Guest patient access.");
+}
+```
+
+In Patient.java, the displayMenu() method is overridden to display a message specific to guest patients.
+
+```java
+@Override
+public void displayMenu() {
+    System.out.println("\nWelcome, Admin.");
+}
+```
+
+Similarly, in Admin.java, the same displayMenu() method is overridden to display a message specific to administrators.
+
+Through polymorphism, both Patient.java and Admin.java use the same inherited method name but execute different implementations depending on the object. This allows the system to provide different behaviors for different types of users while maintaining a common method structure.
