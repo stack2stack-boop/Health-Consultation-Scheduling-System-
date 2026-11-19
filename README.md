@@ -123,3 +123,42 @@ public class Admin extends User {
 Similarly, in Admin.java, inheritance is applied by extending the same User parent class. This allows the Admin class to inherit common user information and methods without having to create them again.
 
 Both Patient.java and Admin.java use the User class as their foundation, allowing the system to organize different user types while reusing common code.
+### *Abstraction*
+
+```java
+public abstract class User {
+    private String name;
+
+    public User(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public abstract void displayMenu();
+}
+```
+
+In User.java, abstraction is applied by declaring the User class as an abstract class. It provides a common structure for different types of users without requiring the parent class to define how each user menu should work. The abstract displayMenu() method must be implemented by its child classes.
+
+```java
+@Override
+public void displayMenu() {
+    System.out.println("Guest patient access.");
+}
+```
+
+In Patient.java, the abstract displayMenu() method from the User class is implemented to provide the appropriate menu behavior for guest patients.
+
+```java
+@Override
+public void displayMenu() {
+    System.out.println("\nWelcome, Admin.");
+}
+```
+
+Similarly, in Admin.java, the same abstract method is implemented to display the administrator's welcome message.
+
+Through abstraction, the system uses the User class as a general foundation while allowing Patient.java and Admin.java to provide their own specific implementations.
