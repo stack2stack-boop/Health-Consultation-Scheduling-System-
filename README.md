@@ -6,7 +6,9 @@ Description: "A Java-based Health Consultation Scheduling System that allows pat
 
 The following are the detailed documentation of how the OOP principles were used throughout the program:
 
-Encapsulation
+### *Encapsulation*
+
+```java
 private String name;
 
 public String getName() {
@@ -15,6 +17,8 @@ public String getName() {
 
 
 In User.java, encapsulation is applied by keeping the variable name private and allowing access through the public getName() method. This protects the user's information from direct modification outside the class.
+```
+```java
 private int age;
 private String contactNumber;
 private String sex;
@@ -30,14 +34,16 @@ public String getContactNumber() {
 public String getSex() {
     return sex;
 }
-
+```
 
 These encapsulated patient information from Patient.java can only be accessed through getter methods. This keeps important patient details protected while allowing other classes to retrieve the necessary information.
+```java
 private final String username = "admin";
 private final String password = "passpass";
-
+```
 
 In Admin.java, the username and password are declared private, preventing other classes from directly accessing or modifying the administrator's login credentials.
+```java
 private Patient patient;
 private LocalDate date;
 private LocalTime startTime;
@@ -48,13 +54,14 @@ private String appointmentCode;
 public Patient getPatient() {
     return patient;
 }
-
+```
 
 In Appointment.java, encapsulation is applied by keeping appointment details private and providing a public getter for accessing the associated patient. This protects the appointment's internal information from direct modification.
+```java
 private final LinkedHashMap<LocalDate, Appointment[]> schedules = new LinkedHashMap<>();
 private final ArrayList<String> usedCodes = new ArrayList<>();
 private final SecureRandom random = new SecureRandom();
-
+```
 
 Lastly, in Clinic.java, the private fields manage appointment schedules, previously generated codes, and random code generation. These cannot be directly accessed outside the class, protecting the system's internal scheduling data.
 ### *Inheritance*
