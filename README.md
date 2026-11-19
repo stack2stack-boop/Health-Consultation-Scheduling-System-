@@ -331,6 +331,59 @@ Logout returns you to the main menu.
 
 Choose 3. Exit from the main menu to close the program.
 
+### ***Sample Output***
+**1.    GUEST MENU**\
+<img width="417" height="111" alt="image" src="https://github.com/user-attachments/assets/b80ee641-a0d2-4396-b7c5-88973b763deb" />
+
+**2.    PATIENT CLASS**\
+<img width="417" height="172" alt="image" src="https://github.com/user-attachments/assets/cbcac246-2836-4e41-9651-70ac60062d4b" />
+
+**3.    APPOINTMENT CLASS**\
+<img width="417" height="234" alt="image" src="https://github.com/user-attachments/assets/07f5ca62-ba0a-44ef-a357-9f84bde4aeaf" />
+
+**4.    CLINIC CONFIRMATION**\
+<img width="328" height="219" alt="c44f907b-7d0e-445d-8084-fdfcc0e4be90" src="https://github.com/user-attachments/assets/f22bd143-0209-4257-938b-36445cec216f" />
+
+**1.    ADMIN MENU**\
+<img width="399" height="213" alt="image" src="https://github.com/user-attachments/assets/0485d64f-4647-4607-9ef1-444aa9982fdd" />
+
+**2. APPOINTMENT CLASS**\
+<img width="329" height="722" alt="2916fb89-73ad-436a-9067-68f902466b23" src="https://github.com/user-attachments/assets/f5e011ab-f323-4315-80fe-97e64ebc6c77" />
+
+**3. CLINIC CONFIRMATION**\
+<img width="414" height="218" alt="3b059226-a391-4047-89e6-047ee14ee3cb" src="https://github.com/user-attachments/assets/c4c2a03b-13ce-4387-9306-c530d6ecb075" />
+
+### ***Author and Acknoelegdement***
+This program is created by **"The RatbuKillas"** from IT-2108 in compliance with the final project requirement in the course Object-Oriented Programming.
+
+**Lead Programmer:** \
+Arce, King Mizael B.
+
+**Members:**\
+Onde, Gian Simon B.\
+Gutierrez, Lester D.\
+Gaylan, Mark Louie R.
+
+Special thanks to **Mr. Dominic Miko Valdez** in guiding these young programmers through introducing OOP concepts which are necessary in completing this project.
+
+### ***Future Enhancements***
+Future developers can transition the system from a text-based console interface to a clean graphical user interface (GUI), making date selection and slot booking much easier to navigate. Incorporating database storage or file handling would also ensure that patient records and schedules are preserved permanently rather than resetting when the program closes. Furthermore, expanding the platform to support appointment cancellation via booking codes, multiple doctor profiles, and administrative search tools will make the scheduling workflow smoother, faster, and more adaptable to real clinic operations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
