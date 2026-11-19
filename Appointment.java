@@ -1,9 +1,8 @@
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public class Appointment {
+class Appointment {
     private Patient patient;
     private LocalDate date;
     private LocalTime startTime;
@@ -28,7 +27,6 @@ public class Appointment {
         if (date.isBefore(today) || (date.equals(today) && !now.isBefore(endTime))) {
             return "COMPLETED";
         }
-
         return "SCHEDULED";
     }
 
