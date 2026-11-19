@@ -15,9 +15,9 @@ public String getName() {
     return name;
 }
 
-
-In User.java, encapsulation is applied by keeping the variable name private and allowing access through the public getName() method. This protects the user's information from direct modification outside the class.
 ```
+In User.java, encapsulation is applied by keeping the variable name private and allowing access through the public getName() method. This protects the user's information from direct modification outside the class.
+
 ```java
 private int age;
 private String contactNumber;
