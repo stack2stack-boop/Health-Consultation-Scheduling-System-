@@ -6,23 +6,15 @@ Description: "A Java-based Health Consultation Scheduling System that allows pat
 
 The following are the detailed documentation of how the OOP principles were used throughout the program:
 
-### *Encapsulation*
-
-```java
+Encapsulation
 private String name;
-
-public User(String name) {
-    this.name = name;
-}
 
 public String getName() {
     return name;
 }
-```
 
-In User.java, encapsulation is applied by keeping the name variable private and allowing access through the public getName() method. This prevents other classes from directly modifying the user's name.
 
-```java
+In User.java, encapsulation is applied by keeping the variable name private and allowing access through the public getName() method. This protects the user's information from direct modification outside the class.
 private int age;
 private String contactNumber;
 private String sex;
@@ -38,18 +30,14 @@ public String getContactNumber() {
 public String getSex() {
     return sex;
 }
-```
 
-In Patient.java, encapsulation is used to protect the patient's personal information, including age, contact number, and sex. These private variables can only be accessed through their respective public getter methods.
 
-```java
+These encapsulated patient information from Patient.java can only be accessed through getter methods. This keeps important patient details protected while allowing other classes to retrieve the necessary information.
 private final String username = "admin";
 private final String password = "passpass";
-```
 
-In Admin.java, the username and password are declared private, preventing other classes from directly accessing the administrator's login credentials. The login() method handles the verification internally.
 
-```java
+In Admin.java, the username and password are declared private, preventing other classes from directly accessing or modifying the administrator's login credentials.
 private Patient patient;
 private LocalDate date;
 private LocalTime startTime;
@@ -61,22 +49,14 @@ public Patient getPatient() {
     return patient;
 }
 
-public String getTimeRange() {
-    DateTimeFormatter format = DateTimeFormatter.ofPattern("h:mm a");
-    return startTime.format(format) + " - " + endTime.format(format);
-}
-```
 
-In Appointment.java, encapsulation is applied by keeping appointment information private. Public methods such as getPatient() and getTimeRange() provide controlled access to specific appointment details without exposing the variables directly.
-
-```java
+In Appointment.java, encapsulation is applied by keeping appointment details private and providing a public getter for accessing the associated patient. This protects the appointment's internal information from direct modification.
 private final LinkedHashMap<LocalDate, Appointment[]> schedules = new LinkedHashMap<>();
 private final ArrayList<String> usedCodes = new ArrayList<>();
 private final SecureRandom random = new SecureRandom();
-```
 
-Lastly, in Clinic.java, encapsulation is applied to the appointment schedules, used appointment codes, and random code generator. These private fields prevent other classes from directly modifying the clinic's internal scheduling data.
 
+Lastly, in Clinic.java, the private fields manage appointment schedules, previously generated codes, and random code generation. These cannot be directly accessed outside the class, protecting the system's internal scheduling data.
 ### *Inheritance*
 
 ```java
