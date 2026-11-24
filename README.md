@@ -411,12 +411,10 @@ Select **`3. Exit`** from the Main Menu to close the program.
 src="https://github.com/user-attachments/assets/0485d64f-4647-4607-9ef1-444aa9982fdd" />
 
 **2. APPOINTMENT CLASS**\
-<img width="329" height="722" alt="2916fb89-73ad-436a-9067-68f902466b23" src="https://github.com/user-attachments/assets/f5e011ab-f323-4315
-   80fe97e64ebc6c77" />
+<img width="329" height="722" alt="2916fb89-73ad-436a-9067-68f902466b23" src="https://github.com/user-attachments/assets/f5e011ab-f323-4315-80fe-97e64ebc6c77" />
 
 **3. CLINIC CONFIRMATION**\
-<img width="414" height="218" alt="3b059226-a391-4047-89e6-047ee14ee3cb" src="https://github.com/user-attachments/assets/c4c2a03b-13ce-4387-9306
-   c530d6ecb075" />
+<img width="414" height="218" alt="3b059226-a391-4047-89e6-047ee14ee3cb" src="https://github.com/user-attachments/assets/c4c2a03b-13ce-4387-9306-c530d6ecb075" />
 
 # Project Limitations
 1. Console-Based - The system will operate through a text-based interface or the terminal and will not include a graphical user interface (GUI). 
