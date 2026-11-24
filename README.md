@@ -4,6 +4,31 @@ Description: "A Java-based Health Consultation Scheduling System that allows pat
 provides appointment date selection, automated time assignments, unique appointment codes, and an admin interface for viewing and managing
 appointment schedules. Developed using Object-Oriented Programming (OOP) concepts."
 
+# Problem being addressed
+In the present time the need for health consultation takes time to set it up, one must go directly in the clinic to list their information and wait
+until their turn.  There's no guarantee what time you're gonna be called but with the help of our Health Consultation Scheduling System, users may
+schedule their health consultation remotely, after setting it up, users are gonna receive a date and a recommended time to show-up.  
+
+# Project Objectives
+The Health Consultation Scheduling System aims to provide a convenient and efficient way for patients to arrange their health consultations without
+having to visit the clinic personally while it also aims to provide clinics with a much more efficient and organized system. 
+
+# Target Users 
+The primary target users of the application are "Patients", who use the system to input their information, schedule health consultations, and receive
+their consultation date and recommended arrival time, and "Clinics", which use it to monitor patient information and organize appointment schedules.
+
+# Main Feature 
+1. User Access & Admin Login - Users can access the system as Guest or Admin. Guest is intended for patients, while Admin access is password
+   protected and requires the correct clearance.
+2. Appointment Scheduling - Patients pick from 12 available dates (up to 30 slots per day), and the system automatically gives them the next 28
+   minute time slot starting at 6:00 AM, plus a recommended arrival time.
+3. Booking Code & Receipt - The system creates a unique appointment code (HC-XXXX-XXXX) and shows a confirmation summary of the booking.
+4. Appointment Management - Allows the clinic administrator to view, organize, and manage patient appointments.
+5. Schedule & Status Viewing - Admins can view all scheduled patients per date and see if each appointment is still SCHEDULED or already COMPLETED
+   based on the current time. 
+
+
+
 # Object-Oriented Programming Concepts Applied
 
 The following are the detailed documentation of how the OOP principles were used throughout the program:
