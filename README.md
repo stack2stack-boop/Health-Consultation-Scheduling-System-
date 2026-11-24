@@ -404,7 +404,7 @@ Select **`3. Exit`** from the Main Menu to close the program.
 <img width="417" height="234" alt="image" src="https://github.com/user-attachments/assets/07f5ca62-ba0a-44ef-a357-9f84bde4aeaf" />
 
 **4.    CLINIC CONFIRMATION**\
-<img width="328" height="219" alt="c44f907b-7d0e-445d-8084-fdfcc0e4be90" src="https://github.com/user-attachments/assets/f22bd143-0209-4257-938b36445cec216f" />
+<img width="328" height="219" alt="c44f907b-7d0e-445d-8084-fdfcc0e4be90" src="https://github.com/user-attachments/assets/f22bd143-0209-4257-938b-36445cec216f" />
 
 **1.    ADMIN MENU**\
 <img width="399" height="213" alt="image" 
