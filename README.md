@@ -101,7 +101,7 @@ public class Main {
 
 ### *Inheritance*
 
-```java
+``` java
 abstract class User {
     private String name;
 
@@ -116,23 +116,7 @@ abstract class User {
     public abstract void displayMenu();
 }
 ```
-
 User.java serves as the base parent class defining shared state (name) and common behavior (getName()) for all user roles in the system.
-
-```java
-public class Patient extends User {
-
-    public Patient(String name, int age, String contactNumber, String sex) {
-        super(name);
-        this.age = age;
-        this.contactNumber = contactNumber;
-        this.sex = sex;
-    }
-}
-```
-
-In Patient.java, inheritance is applied by extending the User class. Through `extends User`, the Patient class inherits the name property and
-getName() method from its parent class. The `super(name)` constructor is used to pass the patient's name to the parent class.
 
 ```java
 class Patient extends User {
@@ -145,6 +129,7 @@ class Patient extends User {
     }
 }
 ```
+
 In Patient.java, class Patient extends User establishes an IS-A relationship with User. Using super(name), the constructor delegates initialization
 of the name field to User, inheriting getName() without duplicating code.
 
@@ -177,13 +162,11 @@ abstract class User {
     public abstract void displayMenu();
 }
 ```
-
 In User.java, abstraction is achieved by declaring abstract class User alongside the abstract method public abstract void displayMenu();. Because a
 generic User cannot be instantiated directly, the parent class defines what every user role must do (displayMenu()) while leaving how it is
 displayed to concrete subclasses.
 
 ```java
-Java
 // In Patient.java
 @Override
 public void displayMenu() {
