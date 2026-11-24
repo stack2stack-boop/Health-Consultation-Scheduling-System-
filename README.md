@@ -344,50 +344,50 @@ Admin Menu
 
 
 # How to Navigate it
-1. Main Menu
+## How to Navigate
 
-When the program starts, you’ll see:
+### 1. Main Menu
+When the program starts, you will see the following options[cite: 6, 8]:
+1. **Guest**[cite: 6, 8]
+2. **Admin**[cite: 6, 8]
+3. **Exit**[cite: 6, 8]
 
-### 1. Guest
-### 2. Admin
-### 3. Exit
+Type the number of your choice and press **Enter**[cite: 8]. Any invalid input (letters or numbers outside `1–3`) will prompt you to try again[cite: 6, 8].
 
-Type the number of your choice and press Enter. Invalid input (letters or numbers out of range) will ask you to try again.
+---
 
-2.1 Guest: Booking an Appointment
+### 2. Guest: Booking an Appointment
+Select **`1. Guest`** and complete the patient registration form[cite: 6, 8]:
+* **Full Name:** Cannot be left empty[cite: 6, 8].
+* **Age:** Enter a number from `1` to `100`[cite: 6, 8].
+* **Contact Number:** Digits only (no spaces, dashes, or `+`)[cite: 6, 8].
+* **Sex:** Enter `1` for **Male** or `2` for **Female**[cite: 6, 8].
 
-Choose 1. Guest and fill in the registration form:
+**Selecting a Date & Receiving Confirmation:**
+1. The system displays the next **12 available dates** (starting tomorrow), showing how many of the **30 daily slots** are taken (e.g., `5/30`) and whether each date is `Available` or `FULL`[cite: 5, 8].
+2. Enter the number of your preferred date (`1` to `12`)[cite: 6, 8].
+3. The system automatically assigns the next open **28-minute slot** starting at **6:00 AM**[cite: 4, 5, 8].
+4. A confirmation screen displays your patient details, appointment date and time, recommended arrival time (**10 minutes early**, except for the `6:00 AM` slot), appointment status, and your unique booking code (`HC-XXXX-XXXX`)[cite: 4, 5, 8].
 
-### Full name: cannot be left empty.
-### Age: a number from 1 to 100.
-### Contact number: digits only (no spaces, dashes, or +).
-### Sex: enter 1 for Male or 2 for Female.
+> **Note:** Make sure to save your appointment code for reference[cite: 4, 8].
 
-Next, you’ll see the next 12 available dates, starting from the day after tomorrow. Each date shows how many of its 30 slots are taken (for example, 5/30) and whether it’s Available or FULL.
+---
 
-Enter the number of the date you want (1 to 12).
-The system automatically assigns the next free time slot for that day. Slots are 28 minutes long, starting at 6:00 AM.
-A confirmation screen shows your details, appointment date and time, recommended arrival time (10 minutes early, except for the 6:00 AM slot), your appointment code (format HC-XXXX-XXXX), and your status.
+### 3. Admin: Viewing Schedules
+Select **`2. Admin`** and enter the administrator credentials[cite: 3, 6, 8]:
+* **Username:** `admin`[cite: 3, 8]
+* **Password:** `passpass`[cite: 3, 8]
 
-Save your appointment code. 
+*(You have **3 login attempts**. After three failed attempts, the system returns you to the Main Menu[cite: 3, 6, 8].)*
 
-2.2 Admin: Viewing Schedules
+Once logged in, the **Admin Menu** appears[cite: 6, 8]:
+* **`1. View Appointment Schedules`** — Lists all 12 dates along with each booked patient's name, assigned time range, and status (`SCHEDULED` or `COMPLETED`). Dates with no bookings display `"No appointments."`[cite: 4, 5, 6, 8]
+* **`2. Logout`** — Logs out of the admin session and returns to the Main Menu[cite: 6, 8].
 
-Choose 2. Admin and log in:
+---
 
-Username: admin
-Password: passpass
-You get 3 attempts. After the third failed attempt, you return to the main menu.
-
-Once logged in, the Admin Menu appears:
-
-1. View Appointment Schedules
-2. Logout
- - View Appointment Schedules lists every date, with each patient’s name, time slot, and status (SCHEDULED or COMPLETED). Dates with no bookings show “No appointments.”
-Logout returns you to the main menu.
-3. Exit
-
-Choose 3. Exit from the main menu to close the program.
+### 4. Exit
+Select **`3. Exit`** from the Main Menu to close the program[cite: 6, 8].
 
 ### ***Sample Output***
 **1.    GUEST MENU**\
@@ -414,13 +414,6 @@ Choose 3. Exit from the main menu to close the program.
 ### ***Author and Acknoelegdement***
 This program is created by **"The RatbuKillas"** from IT-2108 in compliance with the final project requirement in the course Object-Oriented Programming.
 
-**Lead Programmer:** \
-Arce, King Mizael B.
-
-**Members:**\
-Onde, Gian Simon B.\
-Gutierrez, Lester D.\
-Gaylan, Mark Louie R.
 
 Special thanks to **Mr. Dominic Miko Valdez** in guiding these young programmers through introducing OOP concepts which are necessary in completing this project.
 
