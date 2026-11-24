@@ -1,6 +1,8 @@
 # Health-Consultation-Scheduling-System-
 
-Description: "A Java-based Health Consultation Scheduling System that allows patients to register and schedule health consultations online. It provides appointment date selection, automated time assignments, unique appointment codes, and an admin interface for viewing and managing appointment schedules. Developed using Object-Oriented Programming (OOP) concepts."
+Description: "A Java-based Health Consultation Scheduling System that allows patients to register and schedule health consultations online. It
+provides appointment date selection, automated time assignments, unique appointment codes, and an admin interface for viewing and managing
+appointment schedules. Developed using Object-Oriented Programming (OOP) concepts."
 
 # Object-Oriented Programming Concepts Applied
 
@@ -9,65 +11,98 @@ The following are the detailed documentation of how the OOP principles were used
 ### *Encapsulation*
 
 ```java
-private String name;
+abstract class User {
+    private String name;
 
-public String getName() {
-    return name;
+    public String getName() {
+        return name;
+    }
 }
 
 ```
-In User.java, encapsulation is applied by keeping the variable name private and allowing access through the public getName() method. This protects the user's information from direct modification outside the class.
+In User.java, encapsulation is applied by declaring the name field as private and providing controlled read-only access through the public getName()
+getter method. This prevents external classes from directly altering a user's name.   
 
 ```java
-private int age;
-private String contactNumber;
-private String sex;
+class Patient extends User {
+    private int age;
+    private String contactNumber;
+    private String sex;
 
-public int getAge() {
-    return age;
-}
+    public int getAge() {
+        return age;
+    }
 
-public String getContactNumber() {
-    return contactNumber;
-}
+    public String getContactNumber() {
+        return contactNumber;
+    }
 
-public String getSex() {
-    return sex;
+    public String getSex() {
+        return sex;
+    }
 }
 ```
 
-These encapsulated patient information from Patient.java can only be accessed through getter methods. This keeps important patient details protected while allowing other classes to retrieve the necessary information.
+In Patient.java, patient attributes (age, contactNumber, and sex) are declared private and exposed solely through public getter methods. This
+protects sensitive patient records from unauthorized modification while allowing classes like Appointment to retrieve details when printing
+confirmations.
+
 ```java
-private final String username = "admin";
-private final String password = "passpass";
-```
-
-In Admin.java, the username and password are declared private, preventing other classes from directly accessing or modifying the administrator's login credentials.
-```java
-private Patient patient;
-private LocalDate date;
-private LocalTime startTime;
-private LocalTime endTime;
-private LocalTime recommendedArrival;
-private String appointmentCode;
-
-public Patient getPatient() {
-    return patient;
+class Admin extends User {
+    private final String username = "admin";
+    private final String password = "passpass";
 }
 ```
 
-In Appointment.java, encapsulation is applied by keeping appointment details private and providing a public getter for accessing the associated patient. This protects the appointment's internal information from direct modification.
+In Admin.java, username and password are declared private final with no public getters or setters. Credentials remain completely hidden inside the
+Admin class and are validated internally via the login(Scanner input) method.
+
 ```java
-private final LinkedHashMap<LocalDate, Appointment[]> schedules = new LinkedHashMap<>();
-private final ArrayList<String> usedCodes = new ArrayList<>();
-private final SecureRandom random = new SecureRandom();
+class Appointment {
+    private Patient patient;
+    private LocalDate date;
+    private LocalTime startTime;
+    private LocalTime endTime;
+    private LocalTime recommendedArrival;
+    private String appointmentCode;
+
+    public Patient getPatient() {
+        return patient;
+    }
+}
 ```
 
-Lastly, in Clinic.java, the private fields manage appointment schedules, previously generated codes, and random code generation. These cannot be directly accessed outside the class, protecting the system's internal scheduling data.
+In Appointment.java, all booking details (patient, date, startTime, endTime, recommendedArrival, and appointmentCode) are kept private. External
+classes can only inspect the appointment through controlled methods such as getPatient(), getTimeRange(), and getStatus().
+
+```java
+class Clinic {
+    private static final int CAPACITY = 30;
+    private static final int TOTAL_DATES = 12;
+    private static final int SLOT_DURATION = 28;
+    private static final LocalTime OPENING_TIME = LocalTime.of(6, 0);
+    private final LinkedHashMap<LocalDate, Appointment[]> schedules = new LinkedHashMap<>();
+    private final ArrayList<String> usedCodes = new ArrayList<>();
+    private final SecureRandom random = new SecureRandom();
+}
+```
+In Clinic.java, clinic rules, capacity limits, schedule mappings, generated booking codes, and helper methods (countAppointments() and
+generateCode()) are all encapsulated as private. Other classes interact with the clinic exclusively through public operations like
+displayAvailableDates(), bookAppointment(), and displaySchedules().
+
+```java
+public class Main {
+    private static final Scanner input = new Scanner(System.in);
+    private static final Clinic clinic = new Clinic();
+    private static boolean running = true;
+}
+```
+
+
 ### *Inheritance*
 
 ```java
-public abstract class User {
+abstract class User {
     private String name;
 
     public User(String name) {
@@ -82,7 +117,7 @@ public abstract class User {
 }
 ```
 
-The User.java serves as the parent class that contains common properties and methods shared by different types of users in the system. It provides the basic structure that other classes can inherit.
+User.java serves as the base parent class defining shared state (name) and common behavior (getName()) for all user roles in the system.
 
 ```java
 public class Patient extends User {
@@ -96,24 +131,39 @@ public class Patient extends User {
 }
 ```
 
-In Patient.java, inheritance is applied by extending the User class. Through `extends User`, the Patient class inherits the name property and getName() method from its parent class. The `super(name)` constructor is used to pass the patient's name to the parent class.
+In Patient.java, inheritance is applied by extending the User class. Through `extends User`, the Patient class inherits the name property and
+getName() method from its parent class. The `super(name)` constructor is used to pass the patient's name to the parent class.
 
 ```java
-public class Admin extends User {
+class Patient extends User {
+
+    public Patient(String name, int age, String contactNumber, String sex) {
+        super(name);
+        this.age = age;
+        this.contactNumber = contactNumber;
+        this.sex = sex;
+    }
+}
+```
+In Patient.java, class Patient extends User establishes an IS-A relationship with User. Using super(name), the constructor delegates initialization
+of the name field to User, inheriting getName() without duplicating code.
+
+```java
+class Admin extends User {
 
     public Admin(String name) {
         super(name);
     }
 }
 ```
+In Admin.java, class Admin extends User similarly inherits the name property and getName() method from User via super(name), allowing both user
+types to share a unified superclass.
 
-Similarly, in Admin.java, inheritance is applied by extending the same User parent class. This allows the Admin class to inherit common user information and methods without having to create them again.
-
-Both Patient.java and Admin.java use the User class as their foundation, allowing the system to organize different user types while reusing common code.
 ### *Abstraction*
 
 ```java
-public abstract class User {
+Java
+abstract class User {
     private String name;
 
     public User(String name) {
@@ -128,16 +178,26 @@ public abstract class User {
 }
 ```
 
-In User.java, abstraction is applied by declaring the User class as an abstract class. It provides a common structure for different types of users without requiring the parent class to define how each user menu should work. The abstract displayMenu() method must be implemented by its child classes.
+In User.java, abstraction is achieved by declaring abstract class User alongside the abstract method public abstract void displayMenu();. Because a
+generic User cannot be instantiated directly, the parent class defines what every user role must do (displayMenu()) while leaving how it is
+displayed to concrete subclasses.
 
 ```java
+Java
+// In Patient.java
 @Override
 public void displayMenu() {
     System.out.println("Guest patient access.");
 }
+
+// In Admin.java
+@Override
+public void displayMenu() {
+    System.out.println("\nWelcome, Admin.");
+}
 ```
 
-In Patient.java, the abstract displayMenu() method from the User class is implemented to provide the appropriate menu behavior for guest patients.
+Both Patient and Admin fulfill the abstract contract by providing concrete implementations of displayMenu() tailored to their respective roles.
 
 ```java
 @Override
@@ -145,50 +205,29 @@ public void displayMenu() {
     System.out.println("\nWelcome, Admin.");
 }
 ```
-
-Similarly, in Admin.java, the same abstract method is implemented to display the administrator's welcome message.
-
-Through abstraction, the system uses the User class as a general foundation while allowing Patient.java and Admin.java to provide their own specific implementations.
 
 ### *Polymorphism*
 
 ```java
-public abstract class User {
-    private String name;
+// Parent contract in User.java
+public abstract void displayMenu();
 
-    public User(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public abstract void displayMenu();
-}
-```
-
-In User.java, polymorphism is supported through the displayMenu() method, which is declared as an abstract method. This allows different child classes to provide their own versions of the same method.
-
-```java
+// Overridden in Patient.java
 @Override
 public void displayMenu() {
     System.out.println("Guest patient access.");
 }
-```
 
-In Patient.java, the displayMenu() method is overridden to display a message specific to guest patients.
-
-```java
+// Overridden in Admin.java
 @Override
 public void displayMenu() {
     System.out.println("\nWelcome, Admin.");
 }
 ```
 
-Similarly, in Admin.java, the same displayMenu() method is overridden to display a message specific to administrators.
-
-Through polymorphism, both Patient.java and Admin.java use the same inherited method name but execute different implementations depending on the object. This allows the system to provide different behaviors for different types of users while maintaining a common method structure.
+Runtime polymorphism (method overriding) is demonstrated through displayMenu(). Although Patient and Admin share the exact same method signature
+inherited from User, invoking displayMenu() on an Admin object executes Admin's welcome prompt ("\nWelcome, Admin."), whereas invoking it on a
+Patient object executes Patient's access message ("Guest patient access.")
 
 ### ***Program Structure***
 Main Class(Guest Booking)
