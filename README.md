@@ -344,50 +344,49 @@ Admin Menu
 
 
 # How to Navigate it
-## How to Navigate
 
 ### 1. Main Menu
-When the program starts, you will see the following options[cite: 6, 8]:
-1. **Guest**[cite: 6, 8]
-2. **Admin**[cite: 6, 8]
-3. **Exit**[cite: 6, 8]
+When the program starts, you will see the following options:
+1. **Guest**
+2. **Admin**
+3. **Exit**
 
-Type the number of your choice and press **Enter**[cite: 8]. Any invalid input (letters or numbers outside `1–3`) will prompt you to try again[cite: 6, 8].
+Type the number of your choice and press **Enter**. Any invalid input (letters or numbers outside `1–3`) will prompt you to try again.
 
 ---
 
 ### 2. Guest: Booking an Appointment
-Select **`1. Guest`** and complete the patient registration form[cite: 6, 8]:
-* **Full Name:** Cannot be left empty[cite: 6, 8].
-* **Age:** Enter a number from `1` to `100`[cite: 6, 8].
-* **Contact Number:** Digits only (no spaces, dashes, or `+`)[cite: 6, 8].
-* **Sex:** Enter `1` for **Male** or `2` for **Female**[cite: 6, 8].
+Select **`1. Guest`** and complete the patient registration form:
+* **Full Name:** Cannot be left empty.
+* **Age:** Enter a number from `1` to `100`.
+* **Contact Number:** Digits only (no spaces, dashes, or `+`).
+* **Sex:** Enter `1` for **Male** or `2` for **Female**.
 
 **Selecting a Date & Receiving Confirmation:**
-1. The system displays the next **12 available dates** (starting tomorrow), showing how many of the **30 daily slots** are taken (e.g., `5/30`) and whether each date is `Available` or `FULL`[cite: 5, 8].
-2. Enter the number of your preferred date (`1` to `12`)[cite: 6, 8].
-3. The system automatically assigns the next open **28-minute slot** starting at **6:00 AM**[cite: 4, 5, 8].
-4. A confirmation screen displays your patient details, appointment date and time, recommended arrival time (**10 minutes early**, except for the `6:00 AM` slot), appointment status, and your unique booking code (`HC-XXXX-XXXX`)[cite: 4, 5, 8].
+1. The system displays the next **12 available dates** (starting tomorrow), showing how many of the **30 daily slots** are taken (e.g., `5/30`) and whether each date is `Available` or `FULL`.
+2. Enter the number of your preferred date (`1` to `12`).
+3. The system automatically assigns the next open **28-minute slot** starting at **6:00 AM**.
+4. A confirmation screen displays your patient details, appointment date and time, recommended arrival time (**10 minutes early**, except for the `6:00 AM` slot), appointment status, and your unique booking code (`HC-XXXX-XXXX`).
 
-> **Note:** Make sure to save your appointment code for reference[cite: 4, 8].
+> **Note:** Make sure to save your appointment code for reference.
 
 ---
 
 ### 3. Admin: Viewing Schedules
-Select **`2. Admin`** and enter the administrator credentials[cite: 3, 6, 8]:
-* **Username:** `admin`[cite: 3, 8]
-* **Password:** `passpass`[cite: 3, 8]
+Select **`2. Admin`** and enter the administrator credentials:
+* **Username:** `admin`
+* **Password:** `passpass`
 
-*(You have **3 login attempts**. After three failed attempts, the system returns you to the Main Menu[cite: 3, 6, 8].)*
+*(You have **3 login attempts**. After three failed attempts, the system returns you to the Main Menu.)*
 
-Once logged in, the **Admin Menu** appears[cite: 6, 8]:
-* **`1. View Appointment Schedules`** — Lists all 12 dates along with each booked patient's name, assigned time range, and status (`SCHEDULED` or `COMPLETED`). Dates with no bookings display `"No appointments."`[cite: 4, 5, 6, 8]
-* **`2. Logout`** — Logs out of the admin session and returns to the Main Menu[cite: 6, 8].
+Once logged in, the **Admin Menu** appears:
+* **`1. View Appointment Schedules`** — Lists all 12 dates along with each booked patient's name, assigned time range, and status (`SCHEDULED` or `COMPLETED`). Dates with no bookings display `"No appointments."`
+* **`2. Logout`** — Logs out of the admin session and returns to the Main Menu.
 
 ---
 
 ### 4. Exit
-Select **`3. Exit`** from the Main Menu to close the program[cite: 6, 8].
+Select 3. Exit from the Main Menu to close the program.
 
 ### ***Sample Output***
 **1.    GUEST MENU**\
