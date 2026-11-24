@@ -432,7 +432,7 @@ preserved permanently rather than resetting when the program closes. Furthermore
 booking codes, multiple doctor profiles, and administrative search tools will make the scheduling workflow smoother, faster, and more adaptable to
 real clinic operations.
 
-### ***Author and Acknoelegdement***
+### ***Author and Acknowledgement***
 This program is created by **"Little Saint Hames "** from IT-2108 in compliance with the final project requirement in the course Object-Oriented
 Programming.
 
