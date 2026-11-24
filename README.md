@@ -411,7 +411,7 @@ Select **`3. Exit`** from the Main Menu to close the program.
 <img width="414" height="218" alt="3b059226-a391-4047-89e6-047ee14ee3cb" src="https://github.com/user-attachments/assets/c4c2a03b-13ce-4387-9306-c530d6ecb075" />
 
 ### ***Author and Acknoelegdement***
-This program is created by **"The RatbuKillas"** from IT-2108 in compliance with the final project requirement in the course Object-Oriented Programming.
+This program is created by **"Little Saint Hames "** from IT-2108 in compliance with the final project requirement in the course Object-Oriented Programming.
 
 
 Special thanks to **Mr. Dominic Miko Valdez** in guiding these young programmers through introducing OOP concepts which are necessary in completing this project.
