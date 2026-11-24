@@ -196,15 +196,7 @@ public void displayMenu() {
     System.out.println("\nWelcome, Admin.");
 }
 ```
-
 Both Patient and Admin fulfill the abstract contract by providing concrete implementations of displayMenu() tailored to their respective roles.
-
-```java
-@Override
-public void displayMenu() {
-    System.out.println("\nWelcome, Admin.");
-}
-```
 
 ### *Polymorphism*
 
