@@ -338,9 +338,11 @@ Admin Menu
 
 2. Extract the Files: Locate the downloaded ZIP file on your computer and extract it into a regular folder.
 
-3. Open in VS Code: Launch Visual Studio Code, go to File > Open Folder... in the top-left menu, and select the extracted Health-Consultation-          Scheduling-System--main folder.
+3. Open in VS Code: Launch Visual Studio Code, go to File > Open Folder... in the top-left menu, and select the extracted Health-Consultation-
+4.    Scheduling-System--main folder.
 
-4. Run the Application: Open Main.java, click Run in the top menu, and select Start Debugging (or press F5). Once the debugger finishes loading, the    system will launch and run as intended.
+5. Run the Application: Open Main.java, click Run in the top menu, and select Start Debugging (or press F5). Once the debugger finishes loading, the
+6.    system will launch and run as intended.
 
 
 # How to Navigate it
@@ -363,10 +365,12 @@ Select **`1. Guest`** and complete the patient registration form:
 * **Sex:** Enter `1` for **Male** or `2` for **Female**.
 
 **Selecting a Date & Receiving Confirmation:**
-1. The system displays the next **12 available dates** (starting tomorrow), showing how many of the **30 daily slots** are taken (e.g., `5/30`) and whether each date is `Available` or `FULL`.
-2. Enter the number of your preferred date (`1` to `12`).
-3. The system automatically assigns the next open **28-minute slot** starting at **6:00 AM**.
-4. A confirmation screen displays your patient details, appointment date and time, recommended arrival time (**10 minutes early**, except for the `6:00 AM` slot), appointment status, and your unique booking code (`HC-XXXX-XXXX`).
+1. The system displays the next **12 available dates** (starting tomorrow), showing how many of the **30 daily slots** are taken (e.g., `5/30`) and
+2. whether each date is `Available` or `FULL`.
+3. Enter the number of your preferred date (`1` to `12`).
+4. The system automatically assigns the next open **28-minute slot** starting at **6:00 AM**.
+5. A confirmation screen displays your patient details, appointment date and time, recommended arrival time (**10 minutes early**, except for the
+6. `6:00 AM` slot), appointment status, and your unique booking code (`HC-XXXX-XXXX`).
 
 > **Note:** Make sure to save your appointment code for reference.
 
@@ -380,7 +384,8 @@ Select **`2. Admin`** and enter the administrator credentials:
 *(You have **3 login attempts**. After three failed attempts, the system returns you to the Main Menu.)*
 
 Once logged in, the **Admin Menu** appears:
-* **`1. View Appointment Schedules`** — Lists all 12 dates along with each booked patient's name, assigned time range, and status (`SCHEDULED` or `COMPLETED`). Dates with no bookings display `"No appointments."`
+* **`1. View Appointment Schedules`** — Lists all 12 dates along with each booked patient's name, assigned time range, and status (`SCHEDULED` or
+* `COMPLETED`). Dates with no bookings display `"No appointments."`
 * **`2. Logout`** — Logs out of the admin session and returns to the Main Menu.
 
 ---
@@ -399,22 +404,40 @@ Select **`3. Exit`** from the Main Menu to close the program.
 <img width="417" height="234" alt="image" src="https://github.com/user-attachments/assets/07f5ca62-ba0a-44ef-a357-9f84bde4aeaf" />
 
 **4.    CLINIC CONFIRMATION**\
-<img width="328" height="219" alt="c44f907b-7d0e-445d-8084-fdfcc0e4be90" src="https://github.com/user-attachments/assets/f22bd143-0209-4257-938b-36445cec216f" />
+<img width="328" height="219" alt="c44f907b-7d0e-445d-8084-fdfcc0e4be90" src="https://github.com/user-attachments/assets/f22bd143-0209-4257-938b
+   36445cec216f" />
 
 **1.    ADMIN MENU**\
 <img width="399" height="213" alt="image" src="https://github.com/user-attachments/assets/0485d64f-4647-4607-9ef1-444aa9982fdd" />
 
 **2. APPOINTMENT CLASS**\
-<img width="329" height="722" alt="2916fb89-73ad-436a-9067-68f902466b23" src="https://github.com/user-attachments/assets/f5e011ab-f323-4315-80fe-97e64ebc6c77" />
+<img width="329" height="722" alt="2916fb89-73ad-436a-9067-68f902466b23" src="https://github.com/user-attachments/assets/f5e011ab-f323-4315-80fe
+   97e64ebc6c77" />
 
 **3. CLINIC CONFIRMATION**\
-<img width="414" height="218" alt="3b059226-a391-4047-89e6-047ee14ee3cb" src="https://github.com/user-attachments/assets/c4c2a03b-13ce-4387-9306-c530d6ecb075" />
+<img width="414" height="218" alt="3b059226-a391-4047-89e6-047ee14ee3cb" src="https://github.com/user-attachments/assets/c4c2a03b-13ce-4387-9306
+   c530d6ecb075" />
 
 ### ***Author and Acknoelegdement***
-This program is created by **"Little Saint Hames "** from IT-2108 in compliance with the final project requirement in the course Object-Oriented Programming.
+This program is created by **"Little Saint Hames "** from IT-2108 in compliance with the final project requirement in the course Object-Oriented
+Programming.
 
 
-Special thanks to **Mr. Dominic Miko Valdez** in guiding these young programmers through introducing OOP concepts which are necessary in completing this project.
+Special thanks to **Mr. Dominic Miko Valdez** in guiding these young programmers through introducing OOP concepts which are necessary in completing
+this project.
+
+# Project Limitations
+1. Console-Based - The system will operate through a text-based interface or the terminal and will not include a graphical user interface (GUI). 
+
+2. File Handling - The system does not use or utilize the File Handling method, as such any information stored in the system when its being used will be lost after closing the system. 
+
+3. No Medical Records Management - This system only runs to collect basic patient information and the reason for consultation. It does not store diagnoses, prescriptions, or medical histories.
+
+4. Fixed Appointment Duration - Every consultation is assigned a fixed duration of 28 minutes. The system does not support longer or shorter consultations.
 
 ### ***Future Enhancements***
-Future developers can transition the system from a text-based console interface to a clean graphical user interface (GUI), making date selection and slot booking much easier to navigate. Incorporating database storage or file handling would also ensure that patient records and schedules are preserved permanently rather than resetting when the program closes. Furthermore, expanding the platform to support appointment cancellation via booking codes, multiple doctor profiles, and administrative search tools will make the scheduling workflow smoother, faster, and more adaptable to real clinic operations.
+Future developers can transition the system from a text-based console interface to a clean graphical user interface (GUI), making date selection and
+slot booking much easier to navigate. Incorporating database storage or file handling would also ensure that patient records and schedules are
+preserved permanently rather than resetting when the program closes. Furthermore, expanding the platform to support appointment cancellation via
+booking codes, multiple doctor profiles, and administrative search tools will make the scheduling workflow smoother, faster, and more adaptable to
+real clinic operations.
