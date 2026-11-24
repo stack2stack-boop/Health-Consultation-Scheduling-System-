@@ -439,3 +439,6 @@ Programming.
 
 Special thanks to **Mr. Dominic Miko Valdez** in guiding these young programmers through introducing OOP concepts which are necessary in completing
 this project.
+
+## Project Proposal
+[Project Proposal (1).pdf](https://github.com/user-attachments/files/35310601/Project.Proposal.1.pdf)
