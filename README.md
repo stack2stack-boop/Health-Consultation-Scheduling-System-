@@ -386,7 +386,7 @@ Once logged in, the **Admin Menu** appears:
 ---
 
 ### 4. Exit
-Select 3. Exit from the Main Menu to close the program.
+Select **`3. Exit`** from the Main Menu to close the program.
 
 ### ***Sample Output***
 **1.    GUEST MENU**\
