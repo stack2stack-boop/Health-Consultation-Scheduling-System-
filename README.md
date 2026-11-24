@@ -27,6 +27,25 @@ their consultation date and recommended arrival time, and "Clinics", which use i
 5. Schedule & Status Viewing - Admins can view all scheduled patients per date and see if each appointment is still SCHEDULED or already COMPLETED
    based on the current time. 
 
+# Technologies Used:
+##### Programming Language: Java (JDK)
+##### Java Standard Libraries:
+      - java.util.Scanner — reads user input from the console.
+      - java.util.ArrayList, java.util.LinkedHashMap, & java.util.Map — stores and manages daily appointment schedules and used booking codes.
+      - java.time.LocalDate, java.time.LocalTime, & java.time.format.DateTimeFormatter — handles date generation, 28-minute time slot intervals,
+      recommended arrival times, and real-time appointment status checks.
+      - java.security.SecureRandom — generates unique, randomized appointment codes (HC-XXXX-XXXX).
+##### IDE / Code Editor: Visual Studio Code (VS Code) & CodeChum(Sometimes)
+##### Version Control & Repository Hosting: Git & GitHub
+
+# Team Members & Roles
+
+### Lead Programmer: Arce, King Mizael
+### Documentation: Gaylan, Mark Louie 
+### Team Leader: Gutierrez, Lester
+### Design Programmer: Onde, Gian Simon
+
+
 
 
 # Object-Oriented Programming Concepts Applied
@@ -407,23 +426,3 @@ Special thanks to **Mr. Dominic Miko Valdez** in guiding these young programmers
 
 ### ***Future Enhancements***
 Future developers can transition the system from a text-based console interface to a clean graphical user interface (GUI), making date selection and slot booking much easier to navigate. Incorporating database storage or file handling would also ensure that patient records and schedules are preserved permanently rather than resetting when the program closes. Furthermore, expanding the platform to support appointment cancellation via booking codes, multiple doctor profiles, and administrative search tools will make the scheduling workflow smoother, faster, and more adaptable to real clinic operations.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
