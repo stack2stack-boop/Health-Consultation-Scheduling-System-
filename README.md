@@ -404,16 +404,15 @@ Select **`3. Exit`** from the Main Menu to close the program.
 <img width="417" height="234" alt="image" src="https://github.com/user-attachments/assets/07f5ca62-ba0a-44ef-a357-9f84bde4aeaf" />
 
 **4.    CLINIC CONFIRMATION**\
-<img width="328" height="219" alt="c44f907b-7d0e-445d-8084-fdfcc0e4be90" 
-   src="https://github.com/user-attachments/assets/f22bd143-0209-4257-938b36445cec216f" />
+<img width="328" height="219" alt="c44f907b-7d0e-445d-8084-fdfcc0e4be90" src="https://github.com/user-attachments/assets/f22bd143-0209-4257-938b36445cec216f" />
 
 **1.    ADMIN MENU**\
 <img width="399" height="213" alt="image" 
 src="https://github.com/user-attachments/assets/0485d64f-4647-4607-9ef1-444aa9982fdd" />
 
 **2. APPOINTMENT CLASS**\
-<img width="329" height="722" alt="2916fb89-73ad-436a-9067-68f902466b23" 
-   src="https://github.com/user-attachments/assets/f5e011ab-f323-4315-80fe97e64ebc6c77" />
+<img width="329" height="722" alt="2916fb89-73ad-436a-9067-68f902466b23" src="https://github.com/user-attachments/assets/f5e011ab-f323-4315
+   80fe97e64ebc6c77" />
 
 **3. CLINIC CONFIRMATION**\
 <img width="414" height="218" alt="3b059226-a391-4047-89e6-047ee14ee3cb" src="https://github.com/user-attachments/assets/c4c2a03b-13ce-4387-9306
